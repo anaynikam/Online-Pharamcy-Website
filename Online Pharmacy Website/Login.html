@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Online Pharmacy</title>
+   
+    <link rel="stylesheet" href="Online Pharmacy.css" />
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Online Pharmacy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Fitnesstracker.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact Us</a>
+            </li>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Signin.html">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Login.html">Log In</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-lg-4">
+                <div class="card my-5">
+                  <div class="card-body">
+                    <h4 class="card-title text-center mb-4 mt-1">Login</h4>
+                    <hr>
+                    <form action="/authenticate" method="POST" onsubmit="return validateForm()">
+                      <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username"><br>
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" minlength="6"><br>
+                      </div>
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="remember">
+                          <label class="custom-control-label" for="remember">Remember me</label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" id="login-btn" class="btn btn-primary btn-block">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="text-center">Don't have an account? <a href="Signin.html">Sign up</a></div>
+              </div>
+            </div>
+          </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function validateForm() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+  
+    if (email === "" || password === "") {
+      alert("Please fill in all fields");
+      return false;
+    }return true;
+  }
+  </script>
+  </body>
+</html>
