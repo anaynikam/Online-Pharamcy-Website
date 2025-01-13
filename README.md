@@ -1,5 +1,5 @@
 # Online-Pharamcy-Website
-Welcome to the Online Pharmacy Website repository! This project is a fully functional online pharmacy website built using HTML, CSS, Bootstrap, JavaScript, and JSON. It allows users to browse and purchase pharmaceutical products conveniently from the comfort of their homes.
+Welcome to the Online Pharmacy Website repository! This project is a fully functional online pharmacy website built using Front End Development using HTML,CSS,Bootstrap and ReactJS and Back End Development using Node.js and MongoDB. It allows users to browse and purchase pharmaceutical products conveniently from the comfort of their homes.
 
 # Features 
 User-friendly and responsive design for seamless access on various devices.
@@ -15,7 +15,9 @@ HTML5
 CSS3
 Bootstrap
 JavaScript
-JSON
+ReactJS
+Node.JS
+MongoDB
 
 # Getting Started
 Clone the repository:
